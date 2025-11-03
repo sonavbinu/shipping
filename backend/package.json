@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/server.js",
-    "build": "rimraf dist && tsc",
+    "build": "tsc",
+    "clean": "rimraf dist",
     "dev": "concurrently \"tsc -w\" \"nodemon --delay 1 dist/server.js\""
   },
   "dependencies": {
