@@ -11,8 +11,8 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:4000',
-        description: 'Development Server',
+        url: process.env.BASE_URI || 'https://shipping-4.onrender.com',
+        description: 'API Server',
       },
     ],
   },
